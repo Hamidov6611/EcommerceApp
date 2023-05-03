@@ -1,0 +1,9 @@
+.back {
+    background: linear-gradient( 141deg, #3985e5, #0edb23 )
+}
+
+.notfound {
+    border: 3px solid black;
+    border-radius: 12px;
+}
+

@@ -7,14 +7,14 @@ export const resgisterController = async (req, res) => {
     const { name, email, password, phone, address } = req.body;
     //validations
     if (!name || !email || !password || !phone || !address) {
-      return res.send({ error: "All fields is required" });
+      return res.send({ message: "All fields is required" });
     }
     //check user
     const exisitingUser = await userModel.findOne({ email });
     //exisiting User
     if (exisitingUser) {
       return res.status(200).json({
-        ok: true,
+        ok: false,
         message: "Already Register please login",
       });
     }

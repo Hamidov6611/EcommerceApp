@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.anim {
+    animation: animation 0.5s;
+}
+
+@keyframes animation {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 
 * {
     scroll-behavior: smooth;
