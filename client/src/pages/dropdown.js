@@ -44,14 +44,14 @@ const Dropdown = () => {
       {drop && (
         <div className="bg-stone-700 p-2 rounded-md absolute top-19 md:right-[7%] w-[120px]">
           <ul>
-            <li className="text-white font-montserrat cursor-pointer" onClick={dashboardHandler}>
+            <li className="text-white font-montserrat cursor-pointer text-[20px]" onClick={dashboardHandler}>
                 Dashboart
             </li>
             <li
               className="text-white font-montserrat cursor-pointer"
             onClick={logoutHandler}
             >
-              <p onClick={handleLogout}>Logout</p>
+              <p onClick={handleLogout} className=" text-[20px]">Logout</p>
             </li>
           </ul>
         </div>
