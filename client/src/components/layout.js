@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast';
 
 const Layout = ({ children, title, description, keywords, author }) => {
   return (
-    <div>
+    <div className="w-full overflow-hidden">
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content={description} />

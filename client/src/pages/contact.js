@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <Layout title={'Contact us'}>
       <div className={`${styles.flexCenter} flex sm:flex-row flex-col w-full`}>
-        <div className="sm:p-16 p-3 sm:w-[70%] w-full">
+        <div className="sm:p-4 xl:p-16 p-3 md:w-[70%] w-full">
           <img
             src="https://emapta.com/wp-content/uploads/2020/08/emapta-header-technical-support-help-desk-service-desk.jpg"
             alt="contact service"

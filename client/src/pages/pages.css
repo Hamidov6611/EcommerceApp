@@ -1,0 +1,7 @@
+.dropdown {
+    border-bottom: 4px solid #777;
+}
+.dropdown:hover {
+    border: 3px solid #777;
+    border-radius: 8px;
+}
