@@ -12,12 +12,11 @@ const Dropdown = () => {
   const [title, setTitle] = useState(auth?.user?.name);
   const navigate = useNavigate()
   const toggleHandler = () => setDrop((prev) => !prev);
-  const dashboardHandler = () => {
-    setDrop(false);
-    navigate('/dashboard')
-  };
-  const handleLogout = (e) => {
-    e.preventDefault();
+  // const dashboardHandler = async () => {
+  //   setDrop(false);
+  //   navigate(`dashboard/${auth?.user?.role === 1 ? 'admin' : 'user'}`)
+  // };
+  const handleLogout = () => {
     setAuth({
       ...auth,
       user: null,
@@ -44,8 +43,8 @@ const Dropdown = () => {
       {drop && (
         <div className="bg-stone-700 p-2 rounded-md absolute top-19 md:right-[7%] w-[120px]">
           <ul>
-            <li className="text-white font-montserrat cursor-pointer text-[20px]" onClick={dashboardHandler}>
-                Dashboart
+            <li className="text-white font-montserrat cursor-pointer text-[20px]">
+                <Link to={`/dashboard/${auth?.user?.role === 1 ? 'admin' : 'user'}`}>Dashboard</Link>
             </li>
             <li
               className="text-white font-montserrat cursor-pointer"
